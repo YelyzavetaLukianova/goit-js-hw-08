@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"cbZI":[function(require,module,exports) {
 "use strict";var e=require("./gallery-items.js");const l=document.querySelector(".gallery"),a=n(e.galleryItems);function n(l){return e.galleryItems.map(({preview:e,original:l,description:a})=>`<ul class="gallery">\n      <li>\n      <a class="gallery__item" href="${l}">\n        <img\n          class="gallery__image"\n          src="${e}"          \n          alt="${a}"\n        />\n      </a>\n      </li>\n\n     \n    </ul>`).join("")}l.insertAdjacentHTML("beforeend",a);const r=new SimpleLightbox(".gallery a",{captionsData:"alt",captionDelay:250,captionType:"alt"});
 },{"./gallery-items.js":"q5Rn"}]},{},["cbZI"], null)
-//# sourceMappingURL=/parcel-project-template/02-lightbox.28370276.js.map
+//# sourceMappingURL=/goit-js-hw-08/02-lightbox.28370276.js.map
